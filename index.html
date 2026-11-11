@@ -4,23 +4,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#101010">
-  <meta name="description" content="Obsidian Ink är Johan Lagergrens tatueringsstudio i Lund. Se tatueringar i svart och grått och skicka en bokningsförfrågan via Instagram.">
-  <title>Obsidian Ink · Tatuerare i Lund</title>
+  <meta name="description" content="obsidianink är Johan Lagergrens tatueringsstudio i Lund. Se tatueringar i svart och grått och skicka en bokningsförfrågan via Instagram.">
+  <title>obsidianink · Tatuerare i Lund</title>
   <link rel="icon" href="assets/instagram-profil.png" type="image/png" sizes="150x150">
   <link rel="preload" href="assets/fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
   <script src="gallery.js" defer></script>
+  <script src="film.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#innehall">Till innehållet</a>
   <header class="site-header" id="toppen">
     <div class="wrap header-inner">
-      <a class="wordmark" href="#toppen" aria-label="Obsidian Ink, startsida">
+      <a class="wordmark" href="#toppen" aria-label="obsidianink, startsida">
         <img class="wordmark-avatar" src="assets/instagram-profil.png" alt="" width="44" height="44">
-        <span>OBSIDIAN INK</span>
+        <span>obsidianink</span>
       </a>
       <nav aria-label="Huvudmeny">
         <a href="#portfolio">Tatueringar</a>
+        <a href="#filmer">Filmer</a>
         <a class="nav-booking" href="#bokning">Bokning <span class="arrow arrow-down" aria-hidden="true">↘</span></a>
       </nav>
       <a class="header-contact" href="https://www.instagram.com/obsidian.ink.swe/" target="_blank" rel="noopener">Instagram <span class="arrow" aria-hidden="true">↗</span></a>
@@ -28,18 +30,42 @@
   </header>
 
   <main id="innehall">
-    <section class="portfolio wrap" id="portfolio" aria-labelledby="intro-title" data-motion="running">
-      <div class="intro">
+    <section class="intro-film" id="film" aria-labelledby="intro-title">
+      <div class="intro-film-backdrop" aria-hidden="true">
+        <video id="intro-video" width="720" height="1280" poster="assets/obsidian-intro-poster.webp" muted playsinline preload="none">
+          <source src="assets/obsidian-intro.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="intro wrap">
         <div class="intro-copy">
           <h1 id="intro-title">
             <span class="intro-type">Tatuering i</span>
             <span class="intro-display">svart <span class="ampersand">&amp;</span> <em>grått.</em></span>
           </h1>
           <p class="intro-credit">Johan Lagergren <span aria-hidden="true">/</span> Lund</p>
+          <a class="intro-booking" href="#bokning">Boka en tatuering <span class="arrow arrow-down" aria-hidden="true">↘</span></a>
         </div>
-        <a class="intro-booking" href="#bokning">Boka en tatuering <span class="arrow arrow-down" aria-hidden="true">↘</span></a>
+        <div class="film-controls" hidden>
+          <button class="film-sound" type="button" aria-controls="intro-video" aria-pressed="false">
+            <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11 5 6 9H3v6h3l5 4V5Z"/>
+              <path class="film-muted-mark" d="m16 9 6 6m0-6-6 6"/>
+              <path class="film-audible-mark" d="M15 9a4 4 0 0 1 0 6m3-9a8 8 0 0 1 0 12"/>
+            </svg>
+            <span class="film-sound-label">Slå på ljud</span>
+          </button>
+          <button class="film-play icon-button" type="button" aria-controls="intro-video" aria-label="Spela filmen" data-playing="false">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor">
+              <path class="film-play-mark" d="m8 5 12 7-12 7Z"/>
+              <path class="film-pause-mark" d="M7 5h3v14H7zM14 5h3v14h-3z"/>
+            </svg>
+          </button>
+        </div>
+        <noscript><a class="text-link" href="assets/obsidian-intro.mp4">Spela filmen med ljud</a></noscript>
       </div>
+    </section>
 
+    <section class="portfolio wrap" id="portfolio" aria-labelledby="portfolio-title" data-motion="running">
       <div class="gallery-panel">
         <div class="section-heading">
           <h2 id="portfolio-title">Utvalda tatueringar</h2>
@@ -108,6 +134,20 @@
       </div>
     </section>
 
+    <section class="film-gallery wrap" id="filmer" aria-labelledby="films-title">
+      <div class="film-gallery-heading">
+        <h2 id="films-title">Filmer.</h2>
+        <a class="text-link" href="https://www.instagram.com/obsidian.ink.swe/reels/" target="_blank" rel="noopener">Johans Reels på Instagram <span class="arrow" aria-hidden="true">↗</span></a>
+      </div>
+      <figure class="film-gallery-clip">
+        <video id="gallery-video" width="720" height="1280" poster="assets/obsidian-intro-poster.webp" controls playsinline preload="none" aria-label="obsidianinks öppningsfilm">
+          <source src="assets/obsidian-intro.mp4" type="video/mp4">
+          <a href="assets/obsidian-intro.mp4">Spela öppningsfilmen</a>
+        </video>
+        <figcaption>Öppningsfilmen</figcaption>
+      </figure>
+    </section>
+
     <section class="booking" id="bokning" aria-labelledby="booking-title">
       <div class="wrap booking-inner">
         <h2 id="booking-title">Boka en <em>tatuering.</em></h2>
@@ -122,9 +162,9 @@
 
   <footer class="site-footer">
     <div class="wrap footer-inner">
-      <a class="wordmark" href="#toppen" aria-label="Obsidian Ink, tillbaka till toppen">
+      <a class="wordmark" href="#toppen" aria-label="obsidianink, tillbaka till toppen">
         <img class="wordmark-avatar" src="assets/instagram-profil.png" alt="" width="44" height="44">
-        <span>OBSIDIAN INK</span>
+        <span>obsidianink</span>
       </a>
       <a class="footer-address" href="https://www.google.com/maps/search/?api=1&amp;query=Maskinv%C3%A4gen%201%2C%20Lund" target="_blank" rel="noopener">Maskinvägen 1, Lund <span class="arrow" aria-hidden="true">↗</span></a>
       <a class="footer-social" href="https://www.instagram.com/obsidian.ink.swe/" target="_blank" rel="noopener">Instagram <span class="arrow" aria-hidden="true">↗</span></a>
