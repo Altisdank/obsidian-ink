@@ -76,5 +76,6 @@
   });
 
   controls.hidden = false;
-  if (!reducedMotion.matches) void playWithSound();
+  muteFilm();
+  if (!reducedMotion.matches) void video.play().catch(updateControls);
 })();

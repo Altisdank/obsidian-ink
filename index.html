@@ -3,12 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101010">
+  <meta name="theme-color" content="#080808">
+  <meta name="author" content="AltisDank">
   <meta name="description" content="obsidianink är Johan Lagergrens tatueringsstudio i Lund. Se tatueringar i svart och grått och skicka en bokningsförfrågan via Instagram.">
   <title>obsidianink · Tatuerare i Lund</title>
   <link rel="icon" href="assets/instagram-profil.png" type="image/png" sizes="150x150">
-  <link rel="preload" href="assets/fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/Cinzel-Variable.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="studio.css">
   <script src="gallery.js" defer></script>
   <script src="film.js" defer></script>
 </head>
@@ -18,11 +20,11 @@
     <div class="wrap header-inner">
       <a class="wordmark" href="#toppen" aria-label="obsidianink, startsida">
         <img class="wordmark-avatar" src="assets/instagram-profil.png" alt="" width="44" height="44">
-        <span>obsidianink</span>
+        <span class="brand-lockup">obsidianink<span class="brand-detail">Tatueringsstudio · Lund</span></span>
       </a>
       <nav aria-label="Huvudmeny">
         <a href="#portfolio">Tatueringar</a>
-        <a href="#filmer">Filmer</a>
+        <a href="#filmer">Studion</a>
         <a class="nav-booking" href="#bokning">Bokning <span class="arrow arrow-down" aria-hidden="true">↘</span></a>
       </nav>
       <a class="header-contact" href="https://www.instagram.com/obsidian.ink.swe/" target="_blank" rel="noopener">Instagram <span class="arrow" aria-hidden="true">↗</span></a>
@@ -31,20 +33,28 @@
 
   <main id="innehall">
     <section class="intro-film" id="film" aria-labelledby="intro-title">
-      <div class="intro-film-backdrop" aria-hidden="true">
-        <video id="intro-video" width="720" height="1280" poster="assets/obsidian-intro-poster.webp" muted playsinline preload="none">
-          <source src="assets/obsidian-intro.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="intro wrap">
+      <div class="hero-grid wrap">
         <div class="intro-copy">
-          <h1 id="intro-title">
-            <span class="intro-type">Tatuering i</span>
-            <span class="intro-display">svart <span class="ampersand">&amp;</span> <em>grått.</em></span>
-          </h1>
-          <p class="intro-credit">Johan Lagergren <span aria-hidden="true">/</span> Lund</p>
-          <a class="intro-booking" href="#bokning">Boka en tatuering <span class="arrow arrow-down" aria-hidden="true">↘</span></a>
+          <p class="studio-tag"><span aria-hidden="true">✦</span> Johan Lagergren · Lund</p>
+          <h1 class="hero-title" id="intro-title">Din idé.<br><span>Ditt avtryck.</span></h1>
+          <p class="hero-lead">Tatuering i svart &amp; grått.</p>
+          <p class="hero-description">Porträtt, lettering och detaljer som får ta plats. Upptäck Johans tatueringar och ta första steget med din egen idé.</p>
+          <div class="hero-actions">
+            <a class="primary-link" href="#bokning">Boka en tatuering <span class="arrow" aria-hidden="true">↗</span></a>
+            <a class="secondary-link" href="#portfolio">Se tatueringarna <span class="arrow arrow-down" aria-hidden="true">↘</span></a>
+          </div>
+          <dl class="hero-details">
+            <div><dt>Uttrycket</dt><dd>Black &amp; grey</dd></div>
+            <div><dt>Platsen</dt><dd>Lund, Sverige</dd></div>
+            <div><dt>Första steget</dt><dd>Din idé i ett DM</dd></div>
+          </dl>
         </div>
+        <figure class="hero-film">
+          <div class="film-frame-heading"><span>OBSIDIANINK / FILMEN</span><span aria-hidden="true">01</span></div>
+          <div class="hero-film-screen">
+            <video id="intro-video" width="720" height="1280" poster="assets/tattoo-machine-poster.jpg" muted loop playsinline preload="metadata" aria-label="3D-film med tatueringsmaskin och bläck, 10 sekunder">
+              <source src="assets/tattoo-machine.mp4" type="video/mp4">
+            </video>
         <div class="film-controls" hidden>
           <button class="film-sound" type="button" aria-controls="intro-video" aria-pressed="false">
             <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -61,14 +71,17 @@
             </svg>
           </button>
         </div>
-        <noscript><a class="text-link" href="assets/obsidian-intro.mp4">Spela filmen med ljud</a></noscript>
+        <noscript><a class="text-link" href="assets/tattoo-machine.mp4">Spela filmen med ljud</a></noscript>
+          </div>
+          <figcaption><span>Svart. Grått. Obsidian.</span><span class="film-caption-note">Maskinen bakom uttrycket</span></figcaption>
+        </figure>
       </div>
     </section>
 
     <section class="portfolio wrap" id="portfolio" aria-labelledby="portfolio-title" data-motion="running">
       <div class="gallery-panel">
         <div class="section-heading">
-          <h2 id="portfolio-title">Utvalda tatueringar</h2>
+          <div><p class="section-kicker">01 / PORTFOLIO</p><h2 id="portfolio-title">Bläck med karaktär.</h2></div>
           <a class="text-link instagram-link" href="https://www.instagram.com/obsidian.ink.swe/" target="_blank" rel="noopener">Fler på Instagram <span class="arrow" aria-hidden="true">↗</span></a>
         </div>
         <div class="gallery" tabindex="0" role="region" aria-roledescription="bildkarusell" aria-labelledby="portfolio-title" aria-describedby="gallery-help">
@@ -136,21 +149,28 @@
 
     <section class="film-gallery wrap" id="filmer" aria-labelledby="films-title">
       <div class="film-gallery-heading">
-        <h2 id="films-title">Filmer.</h2>
-        <a class="text-link" href="https://www.instagram.com/obsidian.ink.swe/reels/" target="_blank" rel="noopener">Johans Reels på Instagram <span class="arrow" aria-hidden="true">↗</span></a>
+        <p class="section-kicker">02 / OBSIDIANINK</p>
+        <h2 id="films-title">Från en tanke.<br>Till en tatuering.</h2>
+        <p class="studio-description">Bakom obsidianink står Johan Lagergren. I studion i Lund blir personliga idéer till motiv i svart och grått — från porträtt till kalligrafi.</p>
+        <ol class="studio-steps">
+          <li><span class="step-number" aria-hidden="true">01</span><div><h3>Visa din idé</h3><p>Skicka ett DM med en beskrivning och gärna någon referensbild.</p></div></li>
+          <li><span class="step-number" aria-hidden="true">02</span><div><h3>Storlek &amp; placering</h3><p>Berätta ungefär hur stort motivet ska vara och var på kroppen du tänker dig det.</p></div></li>
+          <li><span class="step-number" aria-hidden="true">03</span><div><h3>Ta det vidare med Johan</h3><p>Fortsätt samtalet om motivet och din bokningsförfrågan på Instagram.</p></div></li>
+        </ol>
+        <a class="text-link" href="https://www.instagram.com/obsidian.ink.swe/reels/" target="_blank" rel="noopener">Se mer från Johan på Instagram <span class="arrow" aria-hidden="true">↗</span></a>
       </div>
       <figure class="film-gallery-clip">
         <video id="gallery-video" width="720" height="1280" poster="assets/obsidian-intro-poster.webp" controls playsinline preload="none" aria-label="obsidianinks öppningsfilm">
           <source src="assets/obsidian-intro.mp4" type="video/mp4">
           <a href="assets/obsidian-intro.mp4">Spela öppningsfilmen</a>
         </video>
-        <figcaption>Öppningsfilmen</figcaption>
+        <figcaption>Från studion · ljud väljer du själv</figcaption>
       </figure>
     </section>
 
     <section class="booking" id="bokning" aria-labelledby="booking-title">
       <div class="wrap booking-inner">
-        <h2 id="booking-title">Boka en <em>tatuering.</em></h2>
+        <div><p class="section-kicker">03 / DIN NÄSTA TATUERING</p><h2 id="booking-title">Börja med<br><em>din idé.</em></h2></div>
         <div class="booking-info">
           <p>Skicka ett DM till Johan med din idé. Skriv ungefär hur stort du tänker dig motivet och var på kroppen du vill ha det. Bifoga gärna referensbilder.</p>
           <a class="booking-action" href="https://ig.me/m/obsidian.ink.swe" target="_blank" rel="noopener">Skicka DM till Johan <span class="arrow" aria-hidden="true">↗</span></a>
@@ -168,7 +188,7 @@
       </a>
       <a class="footer-address" href="https://www.google.com/maps/search/?api=1&amp;query=Maskinv%C3%A4gen%201%2C%20Lund" target="_blank" rel="noopener">Maskinvägen 1, Lund <span class="arrow" aria-hidden="true">↗</span></a>
       <a class="footer-social" href="https://www.instagram.com/obsidian.ink.swe/" target="_blank" rel="noopener">Instagram <span class="arrow" aria-hidden="true">↗</span></a>
-      <small>Skapad av AltisDank</small>
+      <small class="footer-credit">Skapad av AltisDank</small>
     </div>
   </footer>
 
