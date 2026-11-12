@@ -25,7 +25,7 @@
   async function playWithSound() {
     const request = ++interaction;
     video.muted = false;
-    video.loop = false;
+    video.loop = true;
     try {
       await video.play();
       if (request === interaction) heardFilm = true;
