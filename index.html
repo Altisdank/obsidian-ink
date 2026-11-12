@@ -3,16 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#080808">
+  <meta name="theme-color" content="#101719">
   <meta name="author" content="AltisDank">
-  <meta name="description" content="obsidianink är Johan Lagergrens tatueringsstudio i Lund. Se tatueringar i svart och grått och skicka en bokningsförfrågan via Instagram.">
+  <meta name="description" content="Obsidian Ink — Johan Lagergrens tatueringsstudio i Lund. Upptäck tatueringar, prova din text i 12 typsnitt och forma en idé att ta vidare med Johan.">
   <title>obsidianink · Tatuerare i Lund</title>
   <link rel="icon" href="assets/instagram-profil.png" type="image/png" sizes="150x150">
-  <link rel="preload" href="assets/fonts/Cinzel-Variable.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/fonts/bebas-neue.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="studio.css">
+  <link rel="stylesheet" href="ideas.css">
   <script src="gallery.js" defer></script>
   <script src="film.js" defer></script>
+  <script src="ideas.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#innehall">Till innehållet</a>
@@ -24,10 +26,11 @@
       </a>
       <nav aria-label="Huvudmeny">
         <a href="#portfolio">Tatueringar</a>
+        <a href="#ideverkstad">Prova din idé</a>
         <a href="#filmer">Studion</a>
         <a class="nav-booking" href="#bokning">Bokning <span class="arrow arrow-down" aria-hidden="true">↘</span></a>
       </nav>
-      <a class="header-contact" href="https://www.instagram.com/obsidian.ink.swe/" target="_blank" rel="noopener">Instagram <span class="arrow" aria-hidden="true">↗</span></a>
+      <a class="header-contact" href="https://ig.me/m/obsidian.ink.swe" target="_blank" rel="noopener">Prata med Johan <span class="arrow" aria-hidden="true">↗</span></a>
     </div>
   </header>
 
@@ -35,22 +38,18 @@
     <section class="intro-film" id="film" aria-labelledby="intro-title">
       <div class="hero-grid wrap">
         <div class="intro-copy">
-          <p class="studio-tag"><span aria-hidden="true">✦</span> Johan Lagergren · Lund</p>
-          <h1 class="hero-title" id="intro-title">Din idé.<br><span>Ditt avtryck.</span></h1>
-          <p class="hero-lead">Tatuering i svart &amp; grått.</p>
-          <p class="hero-description">Porträtt, lettering och detaljer som får ta plats. Upptäck Johans tatueringar och ta första steget med din egen idé.</p>
+          <p class="studio-tag">OBSIDIAN INK / LUND, SVERIGE</p>
+          <h1 class="hero-title" id="intro-title">DIN HUD.<br><em>DITT UTTRYCK.</em></h1>
+          <p class="hero-description">Personliga tatueringar av Johan Lagergren.
+            Från den första tanken till det som stannar kvar.</p>
           <div class="hero-actions">
-            <a class="primary-link" href="#bokning">Boka en tatuering <span class="arrow" aria-hidden="true">↗</span></a>
-            <a class="secondary-link" href="#portfolio">Se tatueringarna <span class="arrow arrow-down" aria-hidden="true">↘</span></a>
+            <a class="primary-link" href="#ideverkstad">Prova din idé <span class="arrow" aria-hidden="true">↗</span></a>
+            <a class="secondary-link" href="#portfolio">Se Johans arbete <span class="arrow arrow-down" aria-hidden="true">↘</span></a>
           </div>
-          <dl class="hero-details">
-            <div><dt>Uttrycket</dt><dd>Black &amp; grey</dd></div>
-            <div><dt>Platsen</dt><dd>Lund, Sverige</dd></div>
-            <div><dt>Första steget</dt><dd>Din idé i ett DM</dd></div>
-          </dl>
+          <div class="studio-signature"><span class="signature-rule" aria-hidden="true"></span><p><strong>Johan Lagergren</strong><span>Porträtt · lettering · black &amp; grey</span></p></div>
         </div>
         <figure class="hero-film">
-          <div class="film-frame-heading"><span>OBSIDIANINK / FILMEN</span><span aria-hidden="true">01</span></div>
+
           <div class="hero-film-screen">
             <video id="intro-video" width="720" height="1280" poster="assets/tattoo-machine-poster.jpg" muted loop playsinline preload="metadata" aria-label="3D-film med tatueringsmaskin och bläck, 10 sekunder">
               <source src="assets/tattoo-machine.mp4" type="video/mp4">
@@ -73,15 +72,17 @@
         </div>
         <noscript><a class="text-link" href="assets/tattoo-machine.mp4">Spela filmen med ljud</a></noscript>
           </div>
-          <figcaption><span>Svart. Grått. Obsidian.</span><span class="film-caption-note">Maskinen bakom uttrycket</span></figcaption>
+          <figcaption>MASKIN / METALL / BLÄCK</figcaption>
         </figure>
       </div>
     </section>
 
+
+
     <section class="portfolio wrap" id="portfolio" aria-labelledby="portfolio-title" data-motion="running">
       <div class="gallery-panel">
         <div class="section-heading">
-          <div><p class="section-kicker">01 / PORTFOLIO</p><h2 id="portfolio-title">Bläck med karaktär.</h2></div>
+          <div><p class="section-kicker">Johans arbete</p><h2 id="portfolio-title">BLÄCK SOM BERÄTTAR.</h2></div>
           <a class="text-link instagram-link" href="https://www.instagram.com/obsidian.ink.swe/" target="_blank" rel="noopener">Fler på Instagram <span class="arrow" aria-hidden="true">↗</span></a>
         </div>
         <div class="gallery" tabindex="0" role="region" aria-roledescription="bildkarusell" aria-labelledby="portfolio-title" aria-describedby="gallery-help">
@@ -147,10 +148,54 @@
       </div>
     </section>
 
+    <section class="ideas-studio wrap" id="ideverkstad" aria-labelledby="ideas-title">
+      <div class="ideas-heading">
+        <div><p class="ideas-eyebrow">DIN IDÉ, DITT UTTRYCK</p><h2 id="ideas-title">ORD SOM <em>STANNAR.</em></h2></div>
+        <p>Skriv ett namn, ett årtal eller något som betyder mer. Hitta en stil du gillar och ta med skissen till Johan.</p>
+      </div>
+      <div class="ideas-workbench">
+        <div class="ideas-controls">
+          <div class="ideas-input-heading"><label for="ideas-text">Vad vill du skriva?</label><span id="ideas-text-count">7 / 160</span></div>
+          <textarea id="ideas-text" rows="2" maxlength="160" spellcheck="false" placeholder="Dina ord här…">Forever</textarea>
+          <div class="ideas-examples" aria-label="Prova en exempeltext"><button type="button" data-ideas-example="Forever">Forever</button><button type="button" data-ideas-example="Mamma">Mamma</button><button type="button" data-ideas-example="1994">1994</button><button type="button" data-ideas-example="Amor eterno">Amor eterno</button></div>
+          <div class="ideas-font-heading"><h3>Hitta ditt typsnitt</h3><span id="ideas-font-count">12 stilar</span></div>
+          <div class="ideas-filters" role="group" aria-label="Filtrera typsnitt"><button type="button" data-ideas-filter="all" aria-pressed="true">Alla</button><button type="button" data-ideas-filter="script" aria-pressed="false">Handstil</button><button type="button" data-ideas-filter="gothic" aria-pressed="false">Gotiskt</button><button type="button" data-ideas-filter="classic" aria-pressed="false">Klassiskt</button><button type="button" data-ideas-filter="favorites" aria-pressed="false">♥ Sparade</button></div>
+          <div class="ideas-font-grid" id="ideas-fonts" role="group" aria-label="Välj typsnitt"></div>
+          <p class="ideas-empty" id="ideas-empty" hidden>Tryck på hjärtat vid ett typsnitt för att spara det här.</p>
+          <div class="ideas-adjustments">
+            <div><label for="ideas-size">Storlek i skissen <output for="ideas-size" id="ideas-size-value">68</output></label><input id="ideas-size" type="range" min="30" max="100" value="68" step="1"></div>
+            <div><label for="ideas-spacing">Bokstavsavstånd <output for="ideas-spacing" id="ideas-spacing-value">0</output></label><input id="ideas-spacing" type="range" min="-2" max="10" value="0" step="0.5"></div>
+          </div>
+        </div>
+        <div class="ideas-preview-column">
+          <div class="ideas-preview-top"><span id="ideas-selected-name">Great Vibes</span><div class="ideas-background" role="group" aria-label="Bakgrund i skissen"><button type="button" data-ideas-background="light" aria-pressed="true">Ljus</button><button type="button" data-ideas-background="dark" aria-pressed="false">Mörk</button></div></div>
+          <div class="ideas-canvas-wrap" id="ideas-canvas-wrap"><canvas id="ideas-canvas" width="1200" height="560" role="img" aria-label="Forever i Great Vibes"></canvas><span class="ideas-paper-note">OBSIDIANINK / IDÉSKISS</span></div>
+          <p class="ideas-preview-note">En idéskiss att prata med Johan om. Storleken här är för visning, inte ett mått för utskrift.</p>
+          <div class="ideas-preview-actions"><button class="ideas-action" type="button" id="ideas-download">Spara skiss som PNG <span aria-hidden="true">↓</span></button><button class="ideas-quiet" type="button" id="ideas-reset">Börja om</button></div>
+          <details class="ideas-compare"><summary>Jämför med ett annat typsnitt <span aria-hidden="true">＋</span></summary><div class="ideas-compare-inner"><label for="ideas-compare-font">Andra typsnittet</label><select id="ideas-compare-font"></select><canvas id="ideas-compare-canvas" width="1200" height="560" role="img" aria-label="Jämförelse av typsnitt"></canvas></div></details>
+          <p class="ideas-status" id="ideas-status" role="status" aria-live="polite"></p>
+          <p class="ideas-privacy">Texten stannar här i din webbläsare. Bara dina sparade typsnitt koms ihåg på den här enheten.</p>
+        </div>
+      </div>
+      <div class="ideas-brief">
+        <div class="ideas-brief-intro"><p class="ideas-eyebrow">TA NÄSTA STEG</p><h3>Samla tankarna.<br>Skicka till Johan.</h3><p>Gör ett litet underlag av din idé. Kopiera texten eller spara den som en fil, och skicka den själv på Instagram.</p><a href="https://ig.me/m/obsidian.ink.swe" target="_blank" rel="noopener">Öppna Johans Instagram <span aria-hidden="true">↗</span></a></div>
+        <div class="ideas-brief-fields">
+          <div class="ideas-brief-row"><div><label for="ideas-placement">Var på kroppen?</label><select id="ideas-placement"><option value="">Välj placering</option><option>Underarm</option><option>Överarm</option><option>Handled</option><option>Rygg</option><option>Bröst</option><option>Ben</option><option>Annan placering</option><option>Inte bestämt ännu</option></select></div><div><label for="ideas-cm">Ungefärlig bredd (cm)</label><input id="ideas-cm" type="number" min="1" max="100" step="any" placeholder="Till exempel 12" inputmode="decimal"></div></div>
+          <label for="ideas-notes">Något mer om din idé?</label><textarea id="ideas-notes" rows="3" maxlength="1200" placeholder="Känsla, detaljer eller något du vill fråga Johan…"></textarea>
+          <div class="ideas-brief-actions"><button class="ideas-action" type="button" id="ideas-copy-brief">Kopiera min idé <span aria-hidden="true">↗</span></button><button class="ideas-quiet" type="button" id="ideas-save-brief">Spara som textfil ↓</button></div>
+          <div id="ideas-copy-fallback" hidden><label for="ideas-brief-output">Kopiera texten här</label><textarea id="ideas-brief-output" rows="8" readonly></textarea></div>
+          <p class="ideas-brief-status" id="ideas-brief-status" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+      <details class="ideas-licenses"><summary>Typsnitt &amp; licenser</summary><p>Typsnitten är fria att använda enligt SIL Open Font License. Upphovspersonernas villkor följer med här.</p><div id="ideas-license-links"></div></details>
+      <noscript><p class="ideas-noscript">Typsnittsverkstaden behöver JavaScript. Du kan alltid <a href="https://ig.me/m/obsidian.ink.swe">beskriva din idé direkt för Johan på Instagram</a>.</p></noscript>
+    </section>
+
+
     <section class="film-gallery wrap" id="filmer" aria-labelledby="films-title">
       <div class="film-gallery-heading">
-        <p class="section-kicker">02 / OBSIDIANINK</p>
-        <h2 id="films-title">Från en tanke.<br>Till en tatuering.</h2>
+        <p class="section-kicker">Människan bakom motiven</p>
+        <h2 id="films-title">BAKOM<br><em>BLÄCKET.</em></h2>
         <p class="studio-description">Bakom obsidianink står Johan Lagergren. I studion i Lund blir personliga idéer till motiv i svart och grått — från porträtt till kalligrafi.</p>
         <ol class="studio-steps">
           <li><span class="step-number" aria-hidden="true">01</span><div><h3>Visa din idé</h3><p>Skicka ett DM med en beskrivning och gärna någon referensbild.</p></div></li>
@@ -170,7 +215,7 @@
 
     <section class="booking" id="bokning" aria-labelledby="booking-title">
       <div class="wrap booking-inner">
-        <div><p class="section-kicker">03 / DIN NÄSTA TATUERING</p><h2 id="booking-title">Börja med<br><em>din idé.</em></h2></div>
+        <div><p class="section-kicker">Har något börjat ta form?</p><h2 id="booking-title">VAD HAR DU<br><em>I TANKARNA?</em></h2></div>
         <div class="booking-info">
           <p>Skicka ett DM till Johan med din idé. Skriv ungefär hur stort du tänker dig motivet och var på kroppen du vill ha det. Bifoga gärna referensbilder.</p>
           <a class="booking-action" href="https://ig.me/m/obsidian.ink.swe" target="_blank" rel="noopener">Skicka DM till Johan <span class="arrow" aria-hidden="true">↗</span></a>
