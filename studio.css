@@ -106,3 +106,11 @@ html{scroll-padding-top:25px}.header-inner{min-height:110px;flex-wrap:wrap;paddi
 .film-gallery{grid-template-columns:1fr;gap:33px;margin-block:70px}.film-gallery-heading h2{font-size:72px}.film-gallery-clip{width:min(100%,380px);justify-self:center}.studio-description{font-size:13px}.booking-inner{grid-template-columns:1fr;gap:28px;padding-block:55px}.booking h2{font-size:clamp(62px,13vw,90px)}.footer-inner{gap:18px 22px;padding-block:28px}.site-footer .wordmark{width:100%}.footer-address{margin-left:0}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.expression-strip{display:grid;grid-template-columns:.75fr 1fr 1fr 1fr;gap:35px;align-items:center;padding-block:40px 44px;border-bottom:1px solid var(--line);margin-bottom:55px}
+.expression-strip>p{font:400 22px/1.2 "Instrument Serif",Georgia,serif;color:#c4b9a4}
+.expression-strip>a{display:block;min-height:90px;color:#e6d5ba}
+.expression-strip>a:hover{color:#fff0d8}
+.expression-script,.expression-name,.expression-note{display:block;font-size:45px;line-height:1.5;font-weight:400;white-space:nowrap}
+.expression-script{font-family:"OI Allura",cursive}.expression-name{font-family:"OI Parisienne",cursive}.expression-note{font-family:"OI Caveat",cursive}
+.expression-caption{display:block;font-size:9px;color:#a5b0ae;letter-spacing:.03em;margin-top:5px}.expression-caption>span{margin-left:12px;color:var(--accent)}
+@media(max-width:760px){.site-header nav{gap:6px}.site-header nav a{font-size:10px;min-height:44px}.expression-strip{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;padding-block:28px;margin-bottom:35px}.expression-strip>p{grid-column:1/-1;font-size:24px;margin-bottom:5px}.expression-strip>p br{display:none}.expression-script,.expression-name,.expression-note{font-size:clamp(25px,5.3vw,40px)}.expression-caption{font-size:8px;line-height:1.7}.expression-caption>span{margin-left:3px}}

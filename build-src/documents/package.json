@@ -1,0 +1,1 @@
+{"name":"obsidian-document-build","private":true,"type":"module","dependencies":{"@pdf-lib/fontkit":"^1.1.1","docx":"^9.15.3","esbuild":"^0.28.2","mammoth":"^1.13.0","pdf-lib":"^1.17.1","pdfjs-dist":"^6.5.438"}}

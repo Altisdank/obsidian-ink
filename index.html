@@ -5,16 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#101719">
   <meta name="author" content="AltisDank">
-  <meta name="description" content="Obsidian Ink — Johan Lagergrens tatueringsstudio i Lund. Upptäck tatueringar, prova din text i 12 typsnitt och forma en idé att ta vidare med Johan.">
+  <meta name="description" content="Obsidian Ink — Johan Lagergrens tatueringsstudio i Lund. Upptäck tatueringar, prova din text i 48 typsnitt och forma en idé att ta vidare med Johan.">
   <title>obsidianink · Tatuerare i Lund</title>
   <link rel="icon" href="assets/instagram-profil.png" type="image/png" sizes="150x150">
   <link rel="preload" href="assets/fonts/bebas-neue.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="studio.css">
   <link rel="stylesheet" href="ideas.css">
+  <link rel="stylesheet" href="converters.css">
   <script src="gallery.js" defer></script>
   <script src="film.js" defer></script>
   <script src="ideas.js" defer></script>
+  <script type="module" src="converters.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#innehall">Till innehållet</a>
@@ -27,6 +29,7 @@
       <nav aria-label="Huvudmeny">
         <a href="#portfolio">Tatueringar</a>
         <a href="#ideverkstad">Prova din idé</a>
+        <a href="#filverkstad">Filverkstad</a>
         <a href="#filmer">Studion</a>
         <a class="nav-booking" href="#bokning">Bokning <span class="arrow arrow-down" aria-hidden="true">↘</span></a>
       </nav>
@@ -40,8 +43,8 @@
         <div class="intro-copy">
           <p class="studio-tag">OBSIDIAN INK / LUND, SVERIGE</p>
           <h1 class="hero-title" id="intro-title">DIN HUD.<br><em>DITT UTTRYCK.</em></h1>
-          <p class="hero-description">Personliga tatueringar av Johan Lagergren.
-            Från den första tanken till det som stannar kvar.</p>
+          <p class="hero-description">Ett namn nära hjärtat. En berättelse att bära.
+            Personliga tatueringar av Johan Lagergren.</p>
           <div class="hero-actions">
             <a class="primary-link" href="#ideverkstad">Prova din idé <span class="arrow" aria-hidden="true">↗</span></a>
             <a class="secondary-link" href="#portfolio">Se Johans arbete <span class="arrow arrow-down" aria-hidden="true">↘</span></a>
@@ -79,10 +82,17 @@
 
 
 
+    <section class="expression-strip wrap" aria-label="Inspiration till din text">
+      <p>Vad vill du bära<br> med dig?</p>
+      <a href="#ideverkstad" data-lettering-text="Amor eterno" data-lettering-font="allura"><span class="expression-script">Amor eterno</span><span class="expression-caption">Kärlek &amp; närhet <span aria-hidden="true">↗</span></span></a>
+      <a href="#ideverkstad" data-lettering-text="Elsa" data-lettering-font="parisienne"><span class="expression-name">Elsa</span><span class="expression-caption">Ett namn nära hjärtat <span aria-hidden="true">↗</span></span></a>
+      <a href="#ideverkstad" data-lettering-text="Här &amp; nu" data-lettering-font="caveat"><span class="expression-note">Här &amp; nu</span><span class="expression-caption">En egen påminnelse <span aria-hidden="true">↗</span></span></a>
+    </section>
+
     <section class="portfolio wrap" id="portfolio" aria-labelledby="portfolio-title" data-motion="running">
       <div class="gallery-panel">
         <div class="section-heading">
-          <div><p class="section-kicker">Johans arbete</p><h2 id="portfolio-title">BLÄCK SOM BERÄTTAR.</h2></div>
+          <div><p class="section-kicker">Lettering, porträtt &amp; personliga motiv</p><h2 id="portfolio-title">BLÄCK SOM BERÄTTAR.</h2></div>
           <a class="text-link instagram-link" href="https://www.instagram.com/obsidian.ink.swe/" target="_blank" rel="noopener">Fler på Instagram <span class="arrow" aria-hidden="true">↗</span></a>
         </div>
         <div class="gallery" tabindex="0" role="region" aria-roledescription="bildkarusell" aria-labelledby="portfolio-title" aria-describedby="gallery-help">
@@ -92,9 +102,9 @@
               <span class="gallery-caption"><span>One Chance</span><span class="card-open" aria-hidden="true">＋</span></span>
             </span></span>
           </a>
-          <a class="gallery-link is-active" href="https://www.instagram.com/obsidian.ink.swe/" target="_blank" rel="noopener" data-title="Lejon & porträtt" data-source-label="Öppna Instagramprofilen" aria-current="true">
+          <a class="gallery-link" href="https://www.instagram.com/obsidian.ink.swe/" target="_blank" rel="noopener" data-title="Lejon & porträtt" data-source-label="Öppna Instagramprofilen">
             <span class="gallery-card"><span class="card-float">
-              <span class="gallery-image"><img src="assets/lejon.webp" data-thumbnail="assets/thumbs/lejon.webp" alt="Svartgrå tatuering av ett lejon ovanför ett porträtt på överarmen" width="640" height="640" fetchpriority="high" decoding="async" draggable="false"></span>
+              <span class="gallery-image"><img src="assets/lejon.webp" data-thumbnail="assets/thumbs/lejon.webp" alt="Svartgrå tatuering av ett lejon ovanför ett porträtt på överarmen" width="640" height="640" fetchpriority="low" decoding="async" draggable="false"></span>
               <span class="gallery-caption"><span>Lejon &amp; porträtt</span><span class="card-open" aria-hidden="true">＋</span></span>
             </span></span>
           </a>
@@ -116,9 +126,9 @@
               <span class="gallery-caption"><span>Porträtt med ornament</span><span class="card-open" aria-hidden="true">＋</span></span>
             </span></span>
           </a>
-          <a class="gallery-link" href="https://www.instagram.com/obsidian.ink.swe/p/DerMt0ftxda/" target="_blank" rel="noopener" data-title="Katter och handstil">
+          <a class="gallery-link is-active" href="https://www.instagram.com/obsidian.ink.swe/p/DerMt0ftxda/" aria-current="true" target="_blank" rel="noopener" data-title="Katter och handstil">
             <span class="gallery-card"><span class="card-float">
-              <span class="gallery-image"><img src="assets/katter.webp" data-thumbnail="assets/thumbs/katter.webp" alt="Två kattsilhuetter ovanför handskriven text på underarmen" width="1200" height="1200" loading="lazy" decoding="async" draggable="false"></span>
+              <span class="gallery-image"><img src="assets/katter.webp" data-thumbnail="assets/thumbs/katter.webp" alt="Två kattsilhuetter ovanför handskriven text på underarmen" width="1200" height="1200" fetchpriority="high" decoding="async" draggable="false"></span>
               <span class="gallery-caption"><span>Katter och handstil</span><span class="card-open" aria-hidden="true">＋</span></span>
             </span></span>
           </a>
@@ -131,7 +141,7 @@
         </div>
         <div class="gallery-toolbar" hidden>
           <div class="gallery-readout">
-            <p class="gallery-active-title">Lejon &amp; porträtt</p>
+            <p class="gallery-active-title">Katter och handstil</p>
           </div>
           <div class="gallery-thumbnails" role="group" aria-label="Välj tatuering"></div>
           <div class="gallery-navigation">
@@ -158,23 +168,30 @@
           <div class="ideas-input-heading"><label for="ideas-text">Vad vill du skriva?</label><span id="ideas-text-count">7 / 160</span></div>
           <textarea id="ideas-text" rows="2" maxlength="160" spellcheck="false" placeholder="Dina ord här…">Forever</textarea>
           <div class="ideas-examples" aria-label="Prova en exempeltext"><button type="button" data-ideas-example="Forever">Forever</button><button type="button" data-ideas-example="Mamma">Mamma</button><button type="button" data-ideas-example="1994">1994</button><button type="button" data-ideas-example="Amor eterno">Amor eterno</button></div>
-          <div class="ideas-font-heading"><h3>Hitta ditt typsnitt</h3><span id="ideas-font-count">12 stilar</span></div>
-          <div class="ideas-filters" role="group" aria-label="Filtrera typsnitt"><button type="button" data-ideas-filter="all" aria-pressed="true">Alla</button><button type="button" data-ideas-filter="script" aria-pressed="false">Handstil</button><button type="button" data-ideas-filter="gothic" aria-pressed="false">Gotiskt</button><button type="button" data-ideas-filter="classic" aria-pressed="false">Klassiskt</button><button type="button" data-ideas-filter="favorites" aria-pressed="false">♥ Sparade</button></div>
+          <div class="ideas-font-heading"><h3>Hitta ditt typsnitt</h3><span id="ideas-font-count">48 stilar</span></div>
+          <label class="ideas-search-label" for="ideas-search">Sök typsnitt eller känsla</label><input id="ideas-search" type="search" placeholder="Till exempel gotiskt, pensel eller Lora" autocomplete="off">
+          <div class="ideas-filters" role="group" aria-label="Filtrera typsnitt"><button type="button" data-ideas-filter="all" aria-pressed="true">Alla</button><button type="button" data-ideas-filter="script" aria-pressed="false">Handstil</button><button type="button" data-ideas-filter="gothic" aria-pressed="false">Gotiskt</button><button type="button" data-ideas-filter="classic" aria-pressed="false">Klassiskt</button><button type="button" data-ideas-filter="custom" aria-pressed="false">Egna</button><button type="button" data-ideas-filter="favorites" aria-pressed="false">♥ Sparade</button></div>
           <div class="ideas-font-grid" id="ideas-fonts" role="group" aria-label="Välj typsnitt"></div>
           <p class="ideas-empty" id="ideas-empty" hidden>Tryck på hjärtat vid ett typsnitt för att spara det här.</p>
+          <div class="ideas-font-upload"><label for="ideas-custom-font">Prova ett eget typsnitt · TTF/OTF, högst 10 MB. Använd en font du har rätt att använda.</label><input id="ideas-custom-font" type="file" accept=".ttf,.otf"></div>
           <div class="ideas-adjustments">
             <div><label for="ideas-size">Storlek i skissen <output for="ideas-size" id="ideas-size-value">68</output></label><input id="ideas-size" type="range" min="30" max="100" value="68" step="1"></div>
             <div><label for="ideas-spacing">Bokstavsavstånd <output for="ideas-spacing" id="ideas-spacing-value">0</output></label><input id="ideas-spacing" type="range" min="-2" max="10" value="0" step="0.5"></div>
           </div>
+          <div class="ideas-effects">
+            <label>Textens placering</label><div class="ideas-alignment" role="group" aria-label="Textjustering"><button type="button" data-ideas-align="left" aria-pressed="false">Vänster</button><button type="button" data-ideas-align="center" aria-pressed="true">Centrerad</button><button type="button" data-ideas-align="right" aria-pressed="false">Höger</button></div>
+            <div class="ideas-checks"><label for="ideas-outline"><input id="ideas-outline" type="checkbox"> Bara kontur</label><label for="ideas-mirror"><input id="ideas-mirror" type="checkbox"> Spegelvänd</label></div>
+            <div class="ideas-curve"><label for="ideas-curve">Böjning <output id="ideas-curve-value" for="ideas-curve">0</output></label><input id="ideas-curve" type="range" min="-60" max="60" value="0" step="1"></div>
+          </div>
         </div>
         <div class="ideas-preview-column">
-          <div class="ideas-preview-top"><span id="ideas-selected-name">Great Vibes</span><div class="ideas-background" role="group" aria-label="Bakgrund i skissen"><button type="button" data-ideas-background="light" aria-pressed="true">Ljus</button><button type="button" data-ideas-background="dark" aria-pressed="false">Mörk</button></div></div>
+          <div class="ideas-preview-top"><span id="ideas-selected-name">Great Vibes</span><div class="ideas-background" role="group" aria-label="Bakgrund i skissen"><button type="button" data-ideas-background="light" aria-pressed="true">Ljus</button><button type="button" data-ideas-background="dark" aria-pressed="false">Mörk</button><button type="button" data-ideas-background="transparent" aria-pressed="false">Genomskinlig</button></div></div>
           <div class="ideas-canvas-wrap" id="ideas-canvas-wrap"><canvas id="ideas-canvas" width="1200" height="560" role="img" aria-label="Forever i Great Vibes"></canvas><span class="ideas-paper-note">OBSIDIANINK / IDÉSKISS</span></div>
           <p class="ideas-preview-note">En idéskiss att prata med Johan om. Storleken här är för visning, inte ett mått för utskrift.</p>
           <div class="ideas-preview-actions"><button class="ideas-action" type="button" id="ideas-download">Spara skiss som PNG <span aria-hidden="true">↓</span></button><button class="ideas-quiet" type="button" id="ideas-reset">Börja om</button></div>
           <details class="ideas-compare"><summary>Jämför med ett annat typsnitt <span aria-hidden="true">＋</span></summary><div class="ideas-compare-inner"><label for="ideas-compare-font">Andra typsnittet</label><select id="ideas-compare-font"></select><canvas id="ideas-compare-canvas" width="1200" height="560" role="img" aria-label="Jämförelse av typsnitt"></canvas></div></details>
           <p class="ideas-status" id="ideas-status" role="status" aria-live="polite"></p>
-          <p class="ideas-privacy">Texten stannar här i din webbläsare. Bara dina sparade typsnitt koms ihåg på den här enheten.</p>
+          <p class="ideas-privacy">Texten stannar här i din webbläsare. Favoriter bland de inbyggda typsnitten koms ihåg på den här enheten. Egna fontfiler finns bara under besöket.</p>
         </div>
       </div>
       <div class="ideas-brief">
@@ -191,6 +208,32 @@
       <noscript><p class="ideas-noscript">Typsnittsverkstaden behöver JavaScript. Du kan alltid <a href="https://ig.me/m/obsidian.ink.swe">beskriva din idé direkt för Johan på Instagram</a>.</p></noscript>
     </section>
 
+    <section class="file-studio wrap" id="filverkstad" aria-labelledby="files-title">
+      <div class="file-heading"><div><p class="section-kicker">Din fil. Ett nytt format.</p><h2 id="files-title">GÖR OM. <span>TA MED.</span></h2></div><p>Bilder, dokument, ljud och 3D-modeller. Byt format här och spara den nya filen direkt på din enhet.</p></div>
+      <div class="convert-categories" role="group" aria-label="Typ av fil"><button type="button" data-convert-category="images" aria-pressed="true"><span>01</span> Bilder</button><button type="button" data-convert-category="documents" aria-pressed="false"><span>02</span> Dokument</button><button type="button" data-convert-category="audio" aria-pressed="false"><span>03</span> Ljud</button><button type="button" data-convert-category="models" aria-pressed="false"><span>04</span> 3D</button></div>
+      <div class="convert-layout">
+        <div class="convert-left">
+          <input class="sr-only" id="convert-file" type="file" accept=".png,.jpg,.jpeg,.webp,.gif,.bmp,.svg" tabindex="-1" aria-label="Fil att konvertera">
+          <button class="convert-pick" id="convert-pick" type="button" aria-describedby="convert-supported"><svg viewBox="0 0 32 32" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M16 22V4m-7 7 7-7 7 7M5 21v7h22v-7"/></svg><strong id="convert-pick-title">Välj en bild</strong><span>eller dra filen hit</span><span id="convert-supported">SVG, PNG, JPG, WebP, GIF eller BMP · högst 20 MB</span></button>
+          <div class="convert-file-details" id="convert-file-details" hidden><div><p id="convert-filename"></p><p id="convert-filesize"></p></div><button class="convert-quiet" id="convert-reset" type="button">Ta bort</button></div>
+          <p class="convert-note" id="convert-note">Spara som PNG, JPG eller WebP, eller vektorisera till SVG. Vektorisering tolkar om bilden och kan ändra detaljer. Animation och kamerans metadata följer inte med.</p>
+          <p class="convert-private"><svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" aria-hidden="true"><rect x="4" y="9" width="12" height="9" rx="1"/><path d="M6 9V6a4 4 0 0 1 8 0v3"/></svg>Filen stannar i din webbläsare. Ingen uppladdning, inget konto.</p>
+        </div>
+        <div class="convert-right">
+          <div id="convert-settings" hidden>
+            <label for="convert-format">Spara som</label><select id="convert-format"></select>
+            <div class="convert-options" id="convert-image-settings"><div><label for="convert-image-size">Längsta sida</label><select id="convert-image-size"><option value="0">Behåll storleken</option><option value="2048">Högst 2 048 px</option><option value="1280">Högst 1 280 px</option><option value="640">Högst 640 px</option></select></div><div id="convert-quality-wrap"><label for="convert-quality">Bildkvalitet <output id="convert-quality-value" for="convert-quality">90 %</output></label><input id="convert-quality" type="range" min="50" max="100" value="90"></div><div id="convert-background-wrap" hidden><label for="convert-background">Bakgrund för JPG</label><input id="convert-background" type="color" value="#ffffff"></div></div>
+          </div>
+          <p class="convert-note" id="convert-vector-note" hidden>Vektorisering passar bäst för logotyper, enkla motiv och tydliga konturer. Bilder förenklas och bearbetas med högst 1 024 pixlar på längsta sidan.</p>
+          <div class="convert-actions"><button class="convert-primary" id="convert-start" type="button" disabled>Konvertera <span aria-hidden="true">↗</span></button><button class="convert-quiet" id="convert-cancel" type="button" hidden>Avbryt</button></div>
+          <div id="convert-progress" hidden><progress id="convert-progress-bar" max="1" aria-label="Konvertering pågår"></progress></div>
+          <p id="convert-status" role="status" aria-live="polite"></p>
+          <div class="convert-result" id="convert-result" hidden><p class="section-kicker">Klar att ta med</p><h3 id="convert-result-name"></h3><p id="convert-result-size"></p><img id="convert-result-image" alt="Den konverterade bilden" hidden><audio id="convert-result-audio" controls preload="metadata" aria-label="Lyssna på den konverterade ljudfilen" hidden></audio><a class="convert-primary" id="convert-download" download>Ladda ned filen <span aria-hidden="true">↓</span></a><ul id="convert-warnings"></ul></div>
+        </div>
+      </div>
+      <details class="convert-licenses"><summary>Om verktyget &amp; licenser</summary><p>Konverteringen sker på din enhet med öppna bibliotek.</p><a href="vendor/documents/THIRD-PARTY-LICENSES.txt" target="_blank" rel="noopener">Dokumentbibliotek</a><a href="vendor/audio/README.txt" target="_blank" rel="noopener">Ljudbibliotek</a><a href="vendor/images/README.txt" target="_blank" rel="noopener">Bildbibliotek</a><a href="vendor/models/README.txt" target="_blank" rel="noopener">3D-bibliotek</a></details>
+      <noscript><p>Filverkstaden behöver JavaScript för att kunna konvertera filer i webbläsaren.</p></noscript>
+    </section>
 
     <section class="film-gallery wrap" id="filmer" aria-labelledby="films-title">
       <div class="film-gallery-heading">

@@ -1,3 +1,39 @@
+@font-face{font-family:"OI DM Sans";src:url("assets/fonts/dm-sans.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"OI Archivo Black";src:url("assets/fonts/archivo-black.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"OI Cormorant Garamond";src:url("assets/fonts/cormorant-garamond.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"OI Syne";src:url("assets/fonts/syne.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"OI Space Grotesk";src:url("assets/fonts/space-grotesk.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"OI Bodoni Moda";src:url("assets/fonts/bodoni-moda.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"OI Kalam";src:url("assets/fonts/kalam.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"OI Charm";src:url("assets/fonts/charm.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"OI Courgette";src:url("assets/fonts/courgette.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"OI Bad Script";src:url("assets/fonts/bad-script.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"OI Borel";src:url("assets/fonts/borel.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"OI Mr Dafoe";src:url("assets/fonts/mr-dafoe.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"OI Marck Script";src:url("assets/fonts/marck-script.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"OI Kaushan Script";src:url("assets/fonts/kaushan-script.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"OI Monsieur La Doulaise";src:url("assets/fonts/monsieur-la-doulaise.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"OI Italianno";src:url("assets/fonts/italianno.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"OI Tangerine";src:url("assets/fonts/tangerine.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"OI Pinyon Script";src:url("assets/fonts/pinyon-script.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"OI Alex Brush";src:url("assets/fonts/alex-brush.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"OI Almendra";src:url("assets/fonts/almendra.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"OI New Rocker";src:url("assets/fonts/new-rocker.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"OI UnifrakturCook";src:url("assets/fonts/unifraktur-cook.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"OI Fira Code";src:url("assets/fonts/fira-code.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"OI JetBrains Mono";src:url("assets/fonts/jetbrains-mono.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"OI IBM Plex Mono";src:url("assets/fonts/ibm-plex-mono.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"OI Sacramento";src:url("assets/fonts/sacramento.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"OI Dancing Script";src:url("assets/fonts/dancing-script.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"OI Pacifico";src:url("assets/fonts/pacifico.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"OI Righteous";src:url("assets/fonts/righteous.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"OI Abril Fatface";src:url("assets/fonts/abril-fatface.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"OI Anton";src:url("assets/fonts/anton.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"OI Sora";src:url("assets/fonts/sora.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"OI Outfit";src:url("assets/fonts/outfit.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"OI Manrope";src:url("assets/fonts/manrope.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"OI Libre Baskerville";src:url("assets/fonts/libre-baskerville.ttf") format("truetype");font-display:swap}
+@font-face{font-family:"OI Playfair Display";src:url("assets/fonts/playfair-display.ttf") format("truetype");font-display:swap}
 @font-face{font-family:"OI Great Vibes";src:url("assets/fonts/great-vibes.ttf") format("truetype");font-display:swap}
 @font-face{font-family:"OI Allura";src:url("assets/fonts/allura.ttf") format("truetype");font-display:swap}
 @font-face{font-family:"OI Parisienne";src:url("assets/fonts/parisienne.ttf") format("truetype");font-display:swap}
@@ -100,5 +136,28 @@
 @media(max-width:760px){.ideas-studio{margin-block:55px;scroll-margin-top:125px}.ideas-heading{display:block;margin-bottom:23px}.ideas-heading h2{font-size:clamp(40px,10vw,58px)}.ideas-heading>p{max-width:44ch;margin-top:17px;margin-bottom:0}.ideas-workbench{grid-template-columns:1fr;border-radius:0}.ideas-controls{border-right:0;border-bottom:1px solid var(--oi-line);padding:20px}.ideas-font-grid{max-height:290px}.ideas-font-name{font-size:10px}.ideas-font-sample{font-size:34px}.ideas-preview-column{padding:22px 20px}.ideas-preview-top{flex-wrap:nowrap}.ideas-canvas-wrap{min-height:220px}.ideas-brief{grid-template-columns:1fr;gap:22px;padding-top:30px}.ideas-brief-intro>p:not(.ideas-eyebrow){max-width:44ch}.ideas-brief-fields{padding:20px}.ideas-brief-row{grid-template-columns:1fr 1fr;gap:12px}.ideas-studio textarea,.ideas-studio select,.ideas-studio input[type=number]{font-size:16px}.ideas-brief-fields label{font-size:11px}.ideas-heading h2 em{display:inline}.ideas-filters{gap:3px}.ideas-filters button{padding-inline:8px;font-size:10px}.ideas-examples button{font-size:11px}.ideas-adjustments label{font-size:10px}}
 @media(max-width:380px){.ideas-controls,.ideas-preview-column{padding:16px}.ideas-filters button{padding-inline:7px}.ideas-font-name{font-size:9px}.ideas-brief-row{grid-template-columns:1fr}.ideas-font-choice{padding-inline:9px}.ideas-preview-actions{gap:8px 14px}.ideas-action{gap:12px;padding-inline:13px}.ideas-heading h2{font-size:39px}}
 @media(prefers-reduced-motion:reduce){.ideas-studio *{scroll-behavior:auto;transition:none!important;animation:none!important}}
+@media(min-width:761px){.ideas-workbench{overflow:visible}.ideas-preview-column{position:sticky;top:24px;align-self:start}}
 
 .ideas-heading h2{font:400 clamp(44px,5vw,72px)/1 var(--display);letter-spacing:0}.ideas-heading h2 em{font-style:normal}.ideas-brief-intro h3{font:400 clamp(34px,3.2vw,46px)/1.1 var(--display);letter-spacing:0}.ideas-workbench{box-shadow:none}.ideas-font-card.is-selected{background:#29342e}.ideas-canvas-wrap{box-shadow:none;border:0}.ideas-background button[aria-pressed=true]{background:#34443e}.ideas-brief-fields{background:transparent;padding:25px 0;border-width:1px 0 0}.ideas-filters button[aria-pressed=true]{border-color:transparent transparent #c39a67;background:transparent}.ideas-licenses{color:#a5b0ae}.ideas-font-choice{padding-right:20px}
+
+/* Extended lettering controls remain within the studio. */
+.ideas-search-label{margin:17px 0 7px!important;font-size:10px!important;color:var(--oi-muted)}
+.ideas-studio input[type=search]{width:100%;min-height:46px;padding:11px 13px;border:1px solid var(--oi-line);background:#101719;color:var(--oi-ink);border-radius:0;font-size:13px;margin-bottom:8px}
+.ideas-font-upload{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin-top:18px;padding-top:14px;border-top:1px solid var(--oi-line)}
+.ideas-font-upload label{font-size:10px;margin:0;max-width:45ch;color:var(--oi-muted);font-weight:400}
+.ideas-font-upload input{display:block;width:100%;min-height:44px;font-size:11px;color:var(--oi-muted)}
+.ideas-font-upload input::file-selector-button{min-height:44px;border:1px solid #65776c;background:#263631;color:var(--oi-ink);padding:8px 12px;margin-right:12px;font:inherit;cursor:pointer}
+.ideas-effects{padding-top:17px;margin-top:17px;border-top:1px solid var(--oi-line)}
+.ideas-alignment{display:flex;gap:4px;margin-bottom:13px;flex-wrap:wrap}
+.ideas-alignment button{flex:1;min-height:44px;min-width:65px;border:1px solid var(--oi-line);background:transparent;color:var(--oi-muted);font-size:10px}
+.ideas-alignment button[aria-pressed=true]{border-color:var(--oi-copper);color:var(--oi-ink);background:#29342e}
+.ideas-checks{display:flex;flex-wrap:wrap;gap:4px 24px}
+.ideas-checks label{display:inline-flex;align-items:center;gap:10px;min-height:44px;margin:0;font-size:11px;font-weight:400}
+.ideas-checks input{width:18px;height:18px;accent-color:var(--oi-copper)}
+.ideas-curve{margin-top:10px}.ideas-curve label{display:flex;justify-content:space-between;font-weight:400;font-size:11px}.ideas-curve output{color:var(--oi-copper)}
+.ideas-curve input{width:100%;min-height:44px;accent-color:var(--oi-sage);margin:0}
+.ideas-canvas-wrap[data-background=transparent],.ideas-compare-canvas-transparent{background-color:#f1f0e9;background-image:conic-gradient(#d8dbd4 25%,transparent 0 50%,#d8dbd4 0 75%,transparent 0);background-size:20px 20px}
+.ideas-background{flex-wrap:wrap}.ideas-background button{min-height:44px}
+.ideas-preview-top{flex-wrap:wrap}.ideas-preview-top>span{overflow-wrap:anywhere}
+.ideas-font-grid{max-height:388px}.ideas-font-choice{min-height:105px}
+@media(max-width:760px){.ideas-studio input[type=search]{font-size:16px}.ideas-font-grid{max-height:310px}.ideas-preview-top{flex-wrap:wrap}.ideas-font-upload input{font-size:10px}}
